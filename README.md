@@ -1,1 +1,1 @@
-# DJSBot
+# Eveeify's JS CordBot
