@@ -1,1 +1,1 @@
-# Eveeify's JS CordBot
+# Codevall.js
