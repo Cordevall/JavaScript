@@ -6,10 +6,10 @@ function loadCommands (client) {
     
     let commandsArray = [];
 
-    const commandsFolder = fs.readdirSync("./bot/commands");
+    const commandsFolder = fs.readdirSync("../commands");
 
     for (const folder of commandsFolder) {
-        const commandsFiles = fs.readdirSync(`./bot/commands/${folder}`).filter((file) => file.endsWith(".js"));
+        const commandsFiles = fs.readdirSync(`../commands/${folder}`).filter((file) => file.endsWith(".js"));
 
         for (const file of commandsFiles) {
             const commandFile = require(`../commands/${folder}/${file}`);

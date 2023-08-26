@@ -1,6 +1,5 @@
-const { SlashCommandBuilder } = require("@discordjs/builders");
-const { PermissionsBitField, EmbedBuilder } = require("discord.js");
-const warningSchema = require('../../schemas/warnschema')
+import { PermissionsBitField, EmbedBuilder, SlashCommandBuilder } from "discord.js";
+import warningSchema from '../../schemas/warnschema';
 
 module.exports = {
   data: new SlashCommandBuilder()

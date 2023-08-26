@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "ascii-table": "^0.0.9",
-    "bootstrap": "^5.2.3",
     "colors": "^1.4.0",
     "discord.js": "^14.11.0",
     "dotenv": "^16.0.3",
@@ -9,7 +8,7 @@
     "jquery": "^3.7.0",
     "math.js": "^1.1.46",
     "mocha": "^10.2.0",
-    "mongoose": "6.0.12",
+    "mongoose": "^6.12.0",
     "next": "^13.4.4",
     "node-fetch": "2",
     "react": "^18.2.0",
@@ -20,7 +19,7 @@
   "description": "Media Mana discord bot all in one discord bot",
   "main": "index.js",
   "scripts": {
-    "test": "yarn node index.js -dev"
+    "test": "node index.js -dev"
   },
   "repository": {
     "type": "git",

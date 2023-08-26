@@ -3,7 +3,7 @@
 // ---------------------------------------------------
 
 // neededed veriables!
-const mcSchema = require("../../schemas/mcstatusschema"); //importing the schema
+const mcSchema = require("../schemas/mcstatusschema"); //importing the schema
 const { ButtonBuilder,ButtonStyle,EmbedBuilder,ActionRowBuilder } = require("discord.js");//importing from discord.js
 
 // ----------------------------------------------------
