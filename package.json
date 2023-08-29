@@ -1,0 +1,21 @@
+{
+  "name": "syncroles-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js -dev",
+    "start": "node index.js -dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-tables": "^0.0.1",
+    "axios": "^1.5.0",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.8.1",
+    "next": "^13.4.19"
+  }
+}
