@@ -9,6 +9,14 @@ const client = new Client({
 	partials: [User, Message, GuildMember, ThreadMember],
 });
 
+
+
+if (error)
+
+
+
+
+
 process.on('unhandledRejection',(reason, promise) => {
     console.log('unhandledRejection At:', promise, 'Reason:',reason);
   });
@@ -55,6 +63,7 @@ module.exports = {
     client,
     start // Export the client variable
 };
-const website  = require('./website')
+const website  = require('./website');
+const { error } = require('node:console');
 website()
 start();
