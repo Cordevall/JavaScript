@@ -1,21 +1,12 @@
-const { Client, Collection, GatewayIntentBits,Partials, REST } = require('discord.js');  
-const { Guilds, GuildMembers, GuildMessages} = GatewayIntentBits;
-const { User, Message, GuildMember, ThreadMember, Channel } = Partials;
-const { Routes } = require('discord-api-types/v9');
-require('dotenv').config();
+import { Client, Collection, GatewayIntentBits, Partials, REST } from 'discord.js';
+
+import { Guilds, GuildMembers, GuildMessages } from GatewayIntentBits;
+import { User, Message, GuildMember, ThreadMember, Channel } from Partials;
 
 const client = new Client({
 	intents: [Guilds, GuildMembers, GuildMessages],
 	partials: [User, Message, GuildMember, ThreadMember],
 });
-
-
-
-if (error)
-
-
-
-
 
 process.on('unhandledRejection',(reason, promise) => {
     console.log('unhandledRejection At:', promise, 'Reason:',reason);

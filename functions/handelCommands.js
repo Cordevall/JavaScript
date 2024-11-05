@@ -3,7 +3,7 @@ const fs = require('fs');
 require('dotenv').config();
 
 
-module.exports = (client, interaction) => {
+const commandHandler = (client) => {
     client.handleCommands = async (commandFolders, path2) => {
         client.commandArray = [];
         try {
@@ -40,7 +40,7 @@ module.exports = (client, interaction) => {
         (async () => {
             try {
                 await rest.put(
-                    Routes.applicationCommands(process.env.clientId, process.env.appID), {
+                    Routes.applicationCommands(process.env.appID, process.env.appID), {
                         body: client.commandArray
                     },
                 );
@@ -49,4 +49,6 @@ module.exports = (client, interaction) => {
             }
         })();
     };
-};
+}
+
+export default commandHandler;
